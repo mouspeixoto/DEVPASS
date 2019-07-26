@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.devpass.pampasistemas.thiagopeixoto.devpass">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_menu_principal.VisualizarCurriculoActivity"></activity>
+        <activity
+            android:name=".activity.TutorialActivity"
+            android:theme="@style/Theme.Intro"></activity>
+        <activity android:name=".activity_menu_principal.VagaActivity" />
+        <activity android:name=".activity_menu_principal.EmpregosActivity" />
+        <activity android:name=".adapter.AdapterVagas" />
+        <activity android:name=".activity_menu_principal.CriarVagasActivity" />
+        <activity android:name=".activity.ComprarActivity" />
+        <activity android:name=".activity.MeusFirebootsActivity" />
+        <activity android:name=".activity.ComentarioVideoActivity" />
+        <activity android:name=".activity.PostarVideoActivity" />
+        <activity android:name=".activity.VideoActivity" />
+        <activity
+            android:name=".activity.MenuPrincipalActivity"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.EmpresasActivity" />
+        <activity
+            android:name=".activity.ConversasActivity"
+            android:label="@string/title_activity_conversas"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.devpass.pampasistemas.thiagopeixoto.devpass.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".activity.VisualizarNoticiaActivity" />
+        <activity android:name=".activity.CriarPostagemActivity" />
+        <activity
+            android:name=".activity.ModeradorActivity"
+            android:label="@string/title_activity_criar_noticias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.UsuarioActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppThemeLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.CadastroActivity"
+            android:theme="@style/AppThemeLogin" />
+        <activity
+            android:name=".activity.EditarPerfilActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity android:name=".activity.PerfilAmigoActivity" />
+        <activity android:name=".activity.FiltroActivity" />
+        <activity android:name=".activity.VisualizarPostagemActivity" />
+        <activity android:name=".activity.ComentariosActivity" />
+
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_devpass_24dp" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/vermelho" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

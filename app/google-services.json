@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "514583131657",
+    "firebase_url": "https://pampadev-de149.firebaseio.com",
+    "project_id": "pampadev-de149",
+    "storage_bucket": "pampadev-de149.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514583131657:android:cad2aa4ce15de14d",
+        "android_client_info": {
+          "package_name": "com.devpass.pampasistemas.thiagopeixoto.devpass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514583131657-e6i2aabd4okerbeci0bnuf4ifvvjt9fv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devpass.pampasistemas.thiagopeixoto.devpass",
+            "certificate_hash": "15e780ae6f0d03b71bfc8f124ee4d80820f7d356"
+          }
+        },
+        {
+          "client_id": "514583131657-rtqee9pivrj84n3lpqo8tok0aijo5qap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1M6_AOzeeghmt1VRZ_c-lpg9aPnkJFTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514583131657-rtqee9pivrj84n3lpqo8tok0aijo5qap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

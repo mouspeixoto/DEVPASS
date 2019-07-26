@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.devpass.pampasistemas.thiagopeixoto.devpass"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    //  implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files("libs/YouTubeAndroidPlayerApi.jar")
+
+
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //Dependências firebase
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.firebaseui:firebase-ui-storage:0.6.0'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+
+    //Dependências bottom navigationEX
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation "com.android.support:design:28.0.0"
+
+    //Dependências circle image view
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Dependências AndroidPhotoFilter
+    implementation 'info.androidhive:imagefilters:1.0.7'
+
+    //Dependência da Lib Universal Image Loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //Dependências like button
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    //Dependências Shine button
+    implementation 'com.sackcentury:shinebutton:0.2.0'
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    /*Dependências para abas*/
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+
+    /*Dependência para material search view*/
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+
+
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    //Dependências picasso
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Para api de pagamento
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'cn.carbs.android:MDDialog:1.0.0'
+
+    //Material Intro para slides de tutorial
+    implementation 'com.heinrichreimersoftware:material-intro:1.6.2'
+
+    //PDF
+    implementation 'com.github.barteksc:android-pdf-viewer:3.1.0-beta.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

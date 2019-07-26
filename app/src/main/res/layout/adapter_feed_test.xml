@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fundo_mensagem_feed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#005DFE"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:text="Desenvolvedor" />
+
+        <ImageView
+            android:id="@+id/feed_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_image"
+            app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/desc_feed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. "
+        android:textColor="#EE000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_image" />
+
+    <com.like.LikeButton
+        android:id="@+id/likeButtonFeed"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:icon_size="30dp"
+        app:icon_type="heart"
+        app:layout_constraintBottom_toTopOf="@+id/textQtdCurtidasPostagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_feed" />
+
+    <ImageView
+        android:id="@+id/imageComentarioFeed"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textQtdCurtidasPostagem"
+        app:layout_constraintStart_toEndOf="@+id/likeButtonFeed"
+        app:layout_constraintTop_toBottomOf="@+id/desc_feed"
+        app:srcCompat="@drawable/comentario" />
+
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:id="@+id/po_image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:color/darker_gray"
+        app:allow_random_color="true"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="#E90F0F"
+        app:enable_flashing="true"
+        app:layout_constraintBottom_toTopOf="@+id/textQtdCurtidasPostagem"
+        app:layout_constraintStart_toEndOf="@+id/imageComentarioFeed"
+        app:layout_constraintTop_toBottomOf="@+id/desc_feed"
+        app:siShape="@drawable/ic_boots_feed_24dp" />
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/ganhos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_feed" />
+
+    <TextView
+        android:id="@+id/textQtdCurtidasPostagem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="0 curtidas"
+        android:textColor="#030303"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/po_image2" />
+
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_menu_principal.VagaActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include4"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageEmpresa"
+            android:layout_width="98dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+        <TextView
+            android:id="@+id/textNomeEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PAMPA SISTEMAS"
+            app:layout_constraintEnd_toEndOf="@+id/imageEmpresa"
+            app:layout_constraintStart_toStartOf="@+id/imageEmpresa"
+            app:layout_constraintTop_toBottomOf="@+id/imageEmpresa" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:progressTint="#2196F3"
+            android:rating="4.5"
+            app:layout_constraintEnd_toEndOf="@+id/textNomeEmpresa"
+            app:layout_constraintStart_toStartOf="@+id/textNomeEmpresa"
+            app:layout_constraintTop_toBottomOf="@+id/textNomeEmpresa" />
+
+        <TextView
+            android:id="@+id/textVagaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Desenvolvedor Junior"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar2"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textVagaTitulo">
+
+            <TextView
+                android:id="@+id/textViewDescVaga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Atuar no desenvolvimento dos produtos da empresa (correções, melhorias, customizações).
+                            \n\nAtuar na discussão dos processos do produto. Apoiar nas dúvidas dos clientes internos (suporte, projetos, comercial). \n\n Sugerir novidades que possam ser interessantes aos produtos. Conhecimentos em C# com framework 3.5 (ou superior) e boa lógica. Necessário noção de WindowsForms e básico de SQL. Conhecimento em CrystalReports."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textCidadeEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cachoeirinha, Rio grande do Sul" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSalarioVaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="R$: 1200,00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <TextView
+            android:id="@+id/textTipodaVaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="CLT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.devpass.pampasistemas.thiagopeixoto.devpass.fragment.PostagemFragment">
+
+
+    <Button
+        android:id="@+id/buttonAbrirGaleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir galeria" />
+
+    <Button
+        android:id="@+id/buttonAbrirCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir câmera" />
+
+    <Button
+        android:id="@+id/buttonYoutubeVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Postar Video" />
+</LinearLayout>

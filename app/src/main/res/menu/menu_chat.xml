@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/pesquisaChat"
+        android:title="@string/PesquisaChat"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_pesquisa_preto_24dp"
+        />
+
+    <item android:id="@+id/menuConfiguracoes"
+        android:title="@string/ConfiguracoesChat"
+        app:showAsAction="never"
+        />
+
+</menu>

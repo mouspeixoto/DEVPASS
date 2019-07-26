@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/ic_mod_outras"
+        android:icon="@drawable/ic_noticias_24dp"
+        android:title="Outras funçoes"/>
+
+    <item android:id="@+id/ic_mod_noticias"
+        android:icon="@drawable/ic_mundial_preto_24dp"
+        android:title="Criar noticia"/>
+
+</menu>

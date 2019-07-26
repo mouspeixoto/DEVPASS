@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.VideoActivity">
+
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <view
+        android:id="@+id/viewYoutubePlayer"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewYoutubePlayer">
+
+        <TextView
+            android:id="@+id/textTituloVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Titulo"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="368dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <TextView
+            android:id="@+id/textDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Encaramos um treinamento do Corpo de Bombeiros de São Paulo para ver de perto como eles apagam incêndios, resgatam feridos e salvam vidas.\n\n► Inscreva-se: https://youtube.com/user/iberethenori\n \nComercial: comercial@manualdomundo.com.br \n\nAssessoria de imprensa: patricia@manualdomundo.com.br \n\nContato: manualdomundo@manualdomundo.com.br"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="411dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDois"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <include layout="@layout/activity_comentario_video"></include>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

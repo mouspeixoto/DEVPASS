@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/ic_emprego_seguindo"
+        android:icon="@drawable/ic_noticias_24dp"
+        android:title="Vagas"/>
+
+    <item android:id="@+id/ic_emprego_PQ"
+        android:icon="@drawable/ic_mundial_preto_24dp"
+        android:title="Candidaturas"/>
+
+</menu>

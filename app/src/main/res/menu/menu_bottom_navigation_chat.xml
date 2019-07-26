@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/ic_home_chat"
+        android:icon="@drawable/ic_home_preto_24dp"
+        android:title="Feed" />
+
+
+    <item android:id="@+id/ic_chat"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="Chat" />
+
+
+    <item android:id="@+id/ic_perfil_chat"
+        android:icon="@drawable/ic_perfil_preto_24dp"
+        android:title="Perfil" />
+
+
+
+
+</menu>
