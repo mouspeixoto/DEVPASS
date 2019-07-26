@@ -1,14 +1,17 @@
 # DEVPASS
 
 
-Entre com o email # teste@gmail.com e senha : 12345678 #
+### Descrição
+
+Caso queira ver com esta o feed para não precisar criar duas contas.
+teste@gmail.com  
+senha : 12345678 
 
 #
 ![picasion com_3233d46d4a722b43cdac5eea7a0e651a](https://user-images.githubusercontent.com/53353354/61985087-e8cea200-afdd-11e9-9061-38a15a38a063.gif)
-#
 
 
-# Implementações
+### Implementações
 - [x] Seguidores
 - [x] Pesquisa de usuarios
 - [x] Criar e excluir publicações
