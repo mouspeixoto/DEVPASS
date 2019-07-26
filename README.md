@@ -3,6 +3,10 @@
 
 Entre com o email # teste@gmail.com e senha : 12345678 #
 
+#
+![picasion com_3233d46d4a722b43cdac5eea7a0e651a](https://user-images.githubusercontent.com/53353354/61985087-e8cea200-afdd-11e9-9061-38a15a38a063.gif)
+#
+
 
 # Implementações
 - [x] Seguidores
@@ -25,3 +29,4 @@ Entre com o email # teste@gmail.com e senha : 12345678 #
 - [ ] Eventos
 - [ ] Admob
 - [ ] Classificação de usuarios - Doações - Ajudas - e mais.
+- [ ] Upgrade material designer
