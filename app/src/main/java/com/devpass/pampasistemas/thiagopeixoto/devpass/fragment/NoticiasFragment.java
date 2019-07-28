@@ -10,16 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.devpass.pampasistemas.thiagopeixoto.devpass.R;
+import com.devpass.pampasistemas.thiagopeixoto.devpass.activity.VideoActivity;
+import com.devpass.pampasistemas.thiagopeixoto.devpass.activity.ViewNoticiasActivity;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.activity.VisualizarPostagemActivity;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.adapter.AdapterFeed;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.adapter.AdapterNoticias;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.helper.ConfiguracaoFirebase;
+import com.devpass.pampasistemas.thiagopeixoto.devpass.helper.RecyclerItemClickListener;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.helper.UsuarioFirebase;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.model.Feed;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.model.Noticias;
 import com.devpass.pampasistemas.thiagopeixoto.devpass.model.Postagem;
+import com.devpass.pampasistemas.thiagopeixoto.devpass.model.Video;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -70,6 +75,35 @@ public class NoticiasFragment extends Fragment {
         recyclerNoticias.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerNoticias.setAdapter( adapterNoticias );
 
+
+        //Configura evento de clique
+        recyclerNoticias.addOnItemTouchListener(
+                new RecyclerItemClickListener(
+                        getActivity(),
+                        recyclerNoticias,
+                        new RecyclerItemClickListener.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(View view, int position) {
+
+                                Noticias noticias = listaNoticias.get(position);
+
+                                Intent a = new Intent(getActivity(), ViewNoticiasActivity.class);
+                                a.putExtra("url", noticias.getUrlNoticia());
+                                startActivity(a);
+                            }
+
+                            @Override
+                            public void onLongItemClick(View view, int position) {
+
+                            }
+
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                            }
+                        }
+                )
+        );
         
 
 
@@ -94,6 +128,7 @@ public class NoticiasFragment extends Fragment {
 
             }
         });
+
 
     }
 
