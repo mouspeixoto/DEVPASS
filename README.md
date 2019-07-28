@@ -5,7 +5,7 @@
 
 Caso queira ver com esta o feed para não precisar criar duas contas.
 
-teste@gmail.com  
+usuario@gmail.com  
 senha : 12345678 
 
 #
