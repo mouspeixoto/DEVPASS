@@ -26,6 +26,7 @@ public class Noticias {
     private String descricao;
     private String tituloNoticia;
     private String idUsuario;
+    private String urlNoticia;
 
     public Noticias() {
 
@@ -90,5 +91,13 @@ public class Noticias {
 
     public void setIdUsuario(String idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public String getUrlNoticia() {
+        return urlNoticia;
+    }
+
+    public void setUrlNoticia(String urlNoticia) {
+        this.urlNoticia = urlNoticia;
     }
 }
