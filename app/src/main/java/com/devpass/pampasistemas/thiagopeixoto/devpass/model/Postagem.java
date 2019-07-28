@@ -55,6 +55,10 @@ public class Postagem implements Serializable {
         Usuario usuarioLogado = UsuarioFirebase.getDadosUsuarioLogado();
 
         //Referência para postagem
+        String combinacaoId = "/" + getIdUsuario() + "/" + getId();
+        objeto.put("/postagens" + combinacaoId, this );
+
+        //Referência para postagem
         for( DataSnapshot seguidores: seguidoresSnapshot.getChildren() ){
 
 
