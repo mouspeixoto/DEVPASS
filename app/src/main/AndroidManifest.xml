@@ -20,10 +20,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_menu_principal.VisualizarCurriculoActivity"></activity>
+        <activity android:name=".activity.ViewNoticiasActivity"></activity>
+        <activity android:name=".activity_menu_principal.VisualizarCurriculoActivity" />
         <activity
             android:name=".activity.TutorialActivity"
-            android:theme="@style/Theme.Intro"></activity>
+            android:theme="@style/Theme.Intro" />
         <activity android:name=".activity_menu_principal.VagaActivity" />
         <activity android:name=".activity_menu_principal.EmpregosActivity" />
         <activity android:name=".adapter.AdapterVagas" />
