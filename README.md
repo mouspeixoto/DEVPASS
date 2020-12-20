@@ -1,7 +1,4 @@
-# DEVPASS
-
-
-### Descrição
+# ChurrasApp
 
 ### Problema
 
